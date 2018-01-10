@@ -1,70 +1,30 @@
 {
   "name": "react-slyer",
   "jspm": {
-    "name": "react-slyer",
-    "dependencies": {
-      "lodash": "npm:lodash@^4.6.1",
-      "react": "npm:react@^0.14.7",
-      "slyer": "github:capaj/slyer@^1.7.1"
-    },
-    "devDependencies": {
-      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.8"
-    },
-    "peerDependencies": {
-      "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
-      "process": "github:jspm/nodelibs-process@^0.2.0-alpha"
-    },
-    "overrides": {
-      "npm:fbjs@0.6.1": {
-        "dependencies": {}
-      },
-      "npm:jquery@2.2.1": {
-        "format": "amd"
-      },
-      "npm:react@0.14.7": {
-        "dependencies": {
-          "fbjs": "^0.6.1"
-        },
-        "format": "cjs",
-        "meta": {
-          "*": {
-            "globals": {
-              "process": "process"
-            }
-          }
-        },
-        "map": {
-          "fbjs/lib/ExecutionEnvironment.js": {
-            "production": "@empty"
-          },
-          "./lib/ReactDefaultPerf.js": {
-            "production": "@empty"
-          },
-          "./lib/ReactTestUtils.js": {
-            "production": "@empty"
-          }
-        }
-      }
-    }
+    "name": "react-slyer"
   },
   "version": "1.0.0",
-  "description": "wrapper component for sly in react.js",
-  "main": "slyer.js",
-  "scripts": {
-    "test": "mocha"
-  },
+  "description": "Wrapper component for sly in react.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/capaj/react-slyer.git"
+    "url": "git+https://github.com/D-Hartley/react-slyer.git"
   },
   "keywords": [
     "sly",
-    "slider"
+    "slyer",
+    "scroll"
   ],
-  "author": "capajj@gmail.com",
+  "author": "David Hartley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/capaj/react-slyer/issues"
+    "url": "https://github.com/D-Hartley/react-slyer/issues"
   },
-  "homepage": "https://github.com/capaj/react-slyer#readme"
+  "homepage": "https://github.com/D-Hartley/react-slyer#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "slyer": "https://github.com/capaj/slyer"
+  }
 }
