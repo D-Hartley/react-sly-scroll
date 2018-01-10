@@ -2,40 +2,35 @@ var path = require('path');
 var webpack  = require('webpack');
 
 module.exports = {
-    resolve: {
-        modules: ['node_modules'],
-        extensions: ['.js', '.jsx']
-    },
+    // resolve: {
+    //     modules: ['node_modules'],
+    //     extensions: ['.js', '.jsx']
+    // },
 
     entry: {
         main: path.resolve(__dirname, 'index.js')
     },
 
     output: {
-        library: 'ReactSlyer',
-        libraryTarget: 'umd',
+        libraryTarget: 'commonjs2',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'ReactSlyer.js'
+        filename: 'index.js'
     },
-    
-    externals: [
-        {
-            react: {
-                root: "React",
-                commonjs2: "react",
-                commonjs: "react",
-                amd: "react"
-            }
-        }
-    ],
     
     module: {
         loaders: [
             {
-                test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'
+                test: /\.jsx?$/, 
+                exclude: /(node_modules|dist)/, 
+                loader: 'babel-loader',
+                options: {
+                    presets: ["env"]
+                }
             }
         ]
     },
-    
-    plugins: []
+
+    externals: {
+        react: 'commonjs react'
+    }
 };

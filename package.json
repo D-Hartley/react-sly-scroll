@@ -7,7 +7,8 @@
   "description": "Wrapper component for sly in react.js",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,9 @@
     "slyer",
     "scroll"
   ],
-  "author": "David Hartley",
+  "author": {
+    "name": "David Hartley"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/D-Hartley/react-slyer/issues"
@@ -27,16 +30,19 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "slyer": "https://github.com/capaj/slyer"
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
     "webpack": "^3.10.0"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }

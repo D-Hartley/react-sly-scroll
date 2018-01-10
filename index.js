@@ -30,14 +30,31 @@ class Sly extends React.Component {
         window.removeEventListener('resize', this.resizeHandler);
     }
 
+    componentDidUpdate() {
+        // After a props update, update Sly options
+        if (this.frame) {
+            Object.assign(this.frame.options,  this.props.options || {});
+            this.frame.reload();
+        }
+        
+    }
+
     render() {
-        const {props} = this;
-        const propsToPass = _.omit(props, 'children');
+        const options = this.props.options || {};
+        const frame = {
+            height: '100%',
+            width: '100%'
+        };
+        const slidee = {
+            display: 'inline-block',
+            height: options.horizontal ? '100%' : 'auto',
+            width: options.horizontal ? 'auto' : '100%'
+        };
 
         return (
-            <div ref='sly' {...propsToPass} className='frame'>
-                <div className='slidee' style = {{display: 'flex'}}>
-                    {props.children}
+            <div ref='sly' className='frame' style={frame}>
+                <div className='slidee' style = {slidee}>
+                    {this.props.children}
                 </div>
             </div>
         );
