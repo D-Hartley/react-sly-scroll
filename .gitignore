@@ -1,8 +1,11 @@
-# Logs
-.log
+# Built direcotyr
+dist/
 
 # Dependency directory
 node_modules
 
-# Project files
+# Project files directory
 .idea/
+
+# Logs
+*.log
