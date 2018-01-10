@@ -1,12 +1,12 @@
 # react-slyer
-super simple wrapper for sly.js slider react component
+Simple wrapper for sly.js slider react component
 
-install with jspm:
+install with yarn:
 ```
-jspm i github:capaj/react-slyer
+yarn add https://github.com/D-Hartley/react-slyer.git
 ```
 
-or with npm:
+install with npm:
 ```
-npm i https://github.com/capaj/react-slyer.git
+npm i https://github.com/D-Hartley/react-slyer.git
 ```
