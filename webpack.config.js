@@ -1,12 +1,6 @@
-var path = require('path');
-var webpack  = require('webpack');
+const path = require('path');
 
 module.exports = {
-    // resolve: {
-    //     modules: ['node_modules'],
-    //     extensions: ['.js', '.jsx']
-    // },
-
     entry: {
         main: path.resolve(__dirname, 'index.js')
     },
@@ -22,10 +16,7 @@ module.exports = {
             {
                 test: /\.jsx?$/, 
                 exclude: /(node_modules|dist)/, 
-                loader: 'babel-loader',
-                options: {
-                    presets: ["env"]
-                }
+                loader: 'babel-loader'
             }
         ]
     },

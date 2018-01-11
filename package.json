@@ -1,10 +1,7 @@
 {
-  "name": "react-slyer",
-  "jspm": {
-    "name": "react-slyer"
-  },
+  "name": "react-sly-scroll",
   "version": "0.1.0",
-  "description": "Wrapper component for sly in react.js",
+  "description": "React component using the Sly.js scrolling library.",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
@@ -12,23 +9,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/D-Hartley/react-slyer.git"
+    "url": "git+https://github.com/D-Hartley/react-sly-scroll.git"
   },
   "keywords": [
     "sly",
-    "slyer",
-    "scroll"
+    "scroll",
+    "react",
+    "vertical",
+    "horizontal"
   ],
   "author": {
     "name": "David Hartley"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/D-Hartley/react-slyer/issues"
+    "url": "https://github.com/D-Hartley/react-sly-scroll/issues"
   },
-  "homepage": "https://github.com/D-Hartley/react-slyer#readme",
+  "homepage": "https://github.com/D-Hartley/react-sly-scroll#readme",
   "dependencies": {
-    "jquery": "^3.2.1",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0"
   },

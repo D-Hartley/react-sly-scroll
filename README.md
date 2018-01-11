@@ -1,12 +1,3 @@
-# react-slyer
-Simple wrapper for sly.js slider react component
+# react-sly-scroll
 
-install with yarn:
-```
-yarn add https://github.com/D-Hartley/react-slyer.git
-```
-
-install with npm:
-```
-npm i https://github.com/D-Hartley/react-slyer.git
-```
+A react component utilising [sly-scroll](https://github.com/D-Hartley/sly-scroll).
